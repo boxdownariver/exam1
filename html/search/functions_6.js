@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['tallestperson_0',['tallestPerson',['../pAlgs_8cpp.html#abf34d332a27627f9c17cef6b9cb2dd84',1,'tallestPerson(const std::array&lt; PersonType, 20 &gt; list):&#160;pAlgs.cpp'],['../pAlgs_8h.html#abf34d332a27627f9c17cef6b9cb2dd84',1,'tallestPerson(const std::array&lt; PersonType, 20 &gt; list):&#160;pAlgs.cpp']]]
+  ['uberget_0',['uberGet',['../classPersonType.html#ab248603e858a0017adeb4ce9d72b0521',1,'PersonType']]],
+  ['uberset_1',['uberSet',['../classPersonType.html#ad23dc3ce5c34a7af0704e72d9d22d5b0',1,'PersonType']]]
 ];

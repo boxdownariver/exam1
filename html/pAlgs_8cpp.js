@@ -1,7 +1,7 @@
 var pAlgs_8cpp =
 [
-    [ "selectionSort", "pAlgs_8cpp.html#a1ed918b257e3ca9f4a220d822e27631d", null ],
-    [ "seqSearch", "pAlgs_8cpp.html#ad33c9596abd765ec014424689e4b9900", null ],
-    [ "shortestPerson", "pAlgs_8cpp.html#afd64124fbe141a3d3e959f36ad49078e", null ],
-    [ "tallestPerson", "pAlgs_8cpp.html#abf34d332a27627f9c17cef6b9cb2dd84", null ]
+    [ "selectionSort", "pAlgs_8cpp.html#a3ba10934eb6e6ea3c82c15392a7412e9", null ],
+    [ "seqSearch", "pAlgs_8cpp.html#a5ec37bb2e637e2324c7570d80e047fd1", null ],
+    [ "shortestPerson", "pAlgs_8cpp.html#a352fa33f28031e7292e2daf9fcfc33a3", null ],
+    [ "tallestPerson", "pAlgs_8cpp.html#a8b2bebecbb0f3e08ba5284a1a4614796", null ]
 ];

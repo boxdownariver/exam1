@@ -93,52 +93,88 @@ $(document).ready(function(){initNavTree('pAlgs_8cpp_source.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 <a href="pAlgs_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="pAlgs_8h.html">pAlgs.h</a>&quot;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="pAlgs_8cpp.html#ad33c9596abd765ec014424689e4b9900">    3</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="pAlgs_8cpp.html#ad33c9596abd765ec014424689e4b9900">seqSearch</a>(<span class="keyword">const</span> std::array&lt;PersonType, 20&gt; list, std::string target) {</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>}</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="pAlgs_8cpp.html#abf34d332a27627f9c17cef6b9cb2dd84">    7</a></span><span class="keywordtype">size_t</span> <a class="code hl_function" href="pAlgs_8cpp.html#abf34d332a27627f9c17cef6b9cb2dd84">tallestPerson</a>(<span class="keyword">const</span> std::array&lt;PersonType, 20&gt; list) {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">size_t</span> tallest;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 20; i++) {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keywordflow">if</span> (list[i].getHeight() &gt; list[tallest].getHeight())</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            tallest = i;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    }</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">return</span> tallest;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="pAlgs_8cpp.html#afd64124fbe141a3d3e959f36ad49078e">   17</a></span><span class="keywordtype">size_t</span> <a class="code hl_function" href="pAlgs_8cpp.html#afd64124fbe141a3d3e959f36ad49078e">shortestPerson</a>(<span class="keyword">const</span> std::array&lt;PersonType, 20&gt; list) {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">size_t</span> tallest;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 20; i++) {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">if</span> (list[i].getHeight() &lt; list[tallest].getHeight())</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            tallest = i;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    }</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="pAlgs_8cpp.html#a1ed918b257e3ca9f4a220d822e27631d">   26</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="pAlgs_8cpp.html#a1ed918b257e3ca9f4a220d822e27631d">selectionSort</a>(std::array&lt;PersonType, 20&gt; people) {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_class" href="classPersonType.html">PersonType</a> dummy;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">int</span> smallest;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 19; i++) {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        smallest = i;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = i + 1; j &lt; 19; j++) {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keywordflow">if</span> (people[j].getlName().compare(people[smallest].getlName()) &lt; 0)</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                smallest = j;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (people[j].getlName().compare(people[smallest].getlName()) == 0 &amp;&amp; people[j].getfName().compare(people[smallest].getfName()) &lt; 0)</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                    smallest = j;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        }</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        dummy = people[i];</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        people[i] = people[smallest];</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        people[smallest] = dummy;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;cctype&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="pAlgs_8cpp.html#a5ec37bb2e637e2324c7570d80e047fd1">    6</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="pAlgs_8cpp.html#a5ec37bb2e637e2324c7570d80e047fd1">seqSearch</a>(<span class="keyword">const</span> std::array&lt;PersonType, 20&gt;&amp; list, std::string target) {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordtype">size_t</span> returnIndex;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    std::vector&lt;size_t&gt; indices;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    std::string choice;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">char</span> choiceChar;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    returnIndex = -1;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; list.size(); i++) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        choice = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        choice.append(list[i].getlName());</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        choice.append(list[i].getfName());</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordflow">if</span> (choice.find(target) != -1)</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            indices.push_back(i);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    choice = <span class="stringliteral">&quot;N&quot;</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">if</span> (indices.size() &gt; 1) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Which person would you like to view?&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        std::cin.ignore(65535, <span class="charliteral">&#39;\n&#39;</span>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; indices.size() &amp;&amp; toupper(choice[0]) != <span class="charliteral">&#39;Y&#39;</span>; i++) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            std::cout &lt;&lt; list[indices[i]].getfName() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; list[indices[i]].getlName() &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;(Y/N)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            std::getline(std::cin, choice);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">if</span> (toupper(choice[0]) == <span class="charliteral">&#39;Y&#39;</span>)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                returnIndex = indices[i];</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (indices.size() == 1)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        returnIndex = indices[0];</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">return</span> returnIndex;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="pAlgs_8cpp.html#a8b2bebecbb0f3e08ba5284a1a4614796">   38</a></span><span class="keywordtype">size_t</span> <a class="code hl_function" href="pAlgs_8cpp.html#a8b2bebecbb0f3e08ba5284a1a4614796">tallestPerson</a>(<span class="keyword">const</span> std::array&lt;PersonType, 20&gt;&amp; list) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">size_t</span> tallest;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    tallest = 0;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; list.size(); i++) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">if</span> (list[i].getHeight() &gt; list[tallest].getHeight())</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            tallest = i;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">return</span> tallest;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="pAlgs_8cpp.html#a352fa33f28031e7292e2daf9fcfc33a3">   50</a></span><span class="keywordtype">size_t</span> <a class="code hl_function" href="pAlgs_8cpp.html#a352fa33f28031e7292e2daf9fcfc33a3">shortestPerson</a>(<span class="keyword">const</span> std::array&lt;PersonType, 20&gt;&amp; list) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">size_t</span> shortest;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    shortest = 0;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; list.size(); i++) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">if</span> (list[i].getHeight() &lt; list[shortest].getHeight())</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            shortest = i;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">return</span> shortest;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="pAlgs_8cpp.html#a3ba10934eb6e6ea3c82c15392a7412e9">   62</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="pAlgs_8cpp.html#a3ba10934eb6e6ea3c82c15392a7412e9">selectionSort</a>(std::array&lt;PersonType, 20&gt;&amp; people) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_class" href="classPersonType.html">PersonType</a> dummy;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">int</span> smallest;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; people.size() - 1; i++) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        smallest = i;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = i + 1; j &lt; people.size(); j++) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordflow">if</span> (people[j].getlName().compare(people[smallest].getlName()) &lt; 0)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                smallest = j;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (people[j].getlName().compare(people[smallest].getlName()) == 0 &amp;&amp; people[j].getfName().compare(people[smallest].getfName()) &lt; 0)</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                    smallest = j;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        dummy = people[i];</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        people[i] = people[smallest];</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        people[smallest] = dummy;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
 <div class="ttc" id="aclassPersonType_html"><div class="ttname"><a href="classPersonType.html">PersonType</a></div><div class="ttdef"><b>Definition:</b> <a href="persontype_8h_source.html#l00015">persontype.h:15</a></div></div>
-<div class="ttc" id="apAlgs_8cpp_html_a1ed918b257e3ca9f4a220d822e27631d"><div class="ttname"><a href="pAlgs_8cpp.html#a1ed918b257e3ca9f4a220d822e27631d">selectionSort</a></div><div class="ttdeci">void selectionSort(std::array&lt; PersonType, 20 &gt; people)</div><div class="ttdef"><b>Definition:</b> <a href="pAlgs_8cpp_source.html#l00026">pAlgs.cpp:26</a></div></div>
-<div class="ttc" id="apAlgs_8cpp_html_abf34d332a27627f9c17cef6b9cb2dd84"><div class="ttname"><a href="pAlgs_8cpp.html#abf34d332a27627f9c17cef6b9cb2dd84">tallestPerson</a></div><div class="ttdeci">size_t tallestPerson(const std::array&lt; PersonType, 20 &gt; list)</div><div class="ttdef"><b>Definition:</b> <a href="pAlgs_8cpp_source.html#l00007">pAlgs.cpp:7</a></div></div>
-<div class="ttc" id="apAlgs_8cpp_html_ad33c9596abd765ec014424689e4b9900"><div class="ttname"><a href="pAlgs_8cpp.html#ad33c9596abd765ec014424689e4b9900">seqSearch</a></div><div class="ttdeci">int seqSearch(const std::array&lt; PersonType, 20 &gt; list, std::string target)</div><div class="ttdef"><b>Definition:</b> <a href="pAlgs_8cpp_source.html#l00003">pAlgs.cpp:3</a></div></div>
-<div class="ttc" id="apAlgs_8cpp_html_afd64124fbe141a3d3e959f36ad49078e"><div class="ttname"><a href="pAlgs_8cpp.html#afd64124fbe141a3d3e959f36ad49078e">shortestPerson</a></div><div class="ttdeci">size_t shortestPerson(const std::array&lt; PersonType, 20 &gt; list)</div><div class="ttdef"><b>Definition:</b> <a href="pAlgs_8cpp_source.html#l00017">pAlgs.cpp:17</a></div></div>
+<div class="ttc" id="apAlgs_8cpp_html_a352fa33f28031e7292e2daf9fcfc33a3"><div class="ttname"><a href="pAlgs_8cpp.html#a352fa33f28031e7292e2daf9fcfc33a3">shortestPerson</a></div><div class="ttdeci">size_t shortestPerson(const std::array&lt; PersonType, 20 &gt; &amp;list)</div><div class="ttdef"><b>Definition:</b> <a href="pAlgs_8cpp_source.html#l00050">pAlgs.cpp:50</a></div></div>
+<div class="ttc" id="apAlgs_8cpp_html_a3ba10934eb6e6ea3c82c15392a7412e9"><div class="ttname"><a href="pAlgs_8cpp.html#a3ba10934eb6e6ea3c82c15392a7412e9">selectionSort</a></div><div class="ttdeci">void selectionSort(std::array&lt; PersonType, 20 &gt; &amp;people)</div><div class="ttdef"><b>Definition:</b> <a href="pAlgs_8cpp_source.html#l00062">pAlgs.cpp:62</a></div></div>
+<div class="ttc" id="apAlgs_8cpp_html_a5ec37bb2e637e2324c7570d80e047fd1"><div class="ttname"><a href="pAlgs_8cpp.html#a5ec37bb2e637e2324c7570d80e047fd1">seqSearch</a></div><div class="ttdeci">int seqSearch(const std::array&lt; PersonType, 20 &gt; &amp;list, std::string target)</div><div class="ttdef"><b>Definition:</b> <a href="pAlgs_8cpp_source.html#l00006">pAlgs.cpp:6</a></div></div>
+<div class="ttc" id="apAlgs_8cpp_html_a8b2bebecbb0f3e08ba5284a1a4614796"><div class="ttname"><a href="pAlgs_8cpp.html#a8b2bebecbb0f3e08ba5284a1a4614796">tallestPerson</a></div><div class="ttdeci">size_t tallestPerson(const std::array&lt; PersonType, 20 &gt; &amp;list)</div><div class="ttdef"><b>Definition:</b> <a href="pAlgs_8cpp_source.html#l00038">pAlgs.cpp:38</a></div></div>
 <div class="ttc" id="apAlgs_8h_html"><div class="ttname"><a href="pAlgs_8h.html">pAlgs.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['employeeid_0',['employeeID',['../classProfessorType.html#af75063ec5ddf0fdc496353b2d51dee84',1,'ProfessorType']]]
+  ['gender_0',['gender',['../classPersonType.html#a86a674d13a222238ab2bf52019a93cff',1,'PersonType']]]
 ];
