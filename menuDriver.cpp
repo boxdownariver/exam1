@@ -18,7 +18,7 @@ int menu() {
 		std::cout << "<2> Tallest person" << std::endl;
 		std::cout << "<3> Shortest person" << std::endl;
 		std::cout << "<4> Print by Name" << std::endl;
-		std::cout << "<5> Quit" << std::endl;
+		std::cout << "<5> Quit" << std::endl << std::endl;
 
 		std::cin >> choice;
 	} while (choice[0] > '5' || choice[0] < '1');
@@ -35,12 +35,13 @@ void menuDriver() {
 	int menuItem;
 	int result;
 
-	for (int i = 0; i < 20; i++) {
+	for (int i = 0; i < people.size(); i++) {
 		people[i].setFromCIN();
 	}
 	system("clear");
 	do {
 		menuItem = menu();
+		result = 0;
 
 		switch (menuItem) {
 			case 1:
@@ -49,31 +50,38 @@ void menuDriver() {
 				std::cin >> target;
 				result = seqSearch(people, target);
 
-								break;
+				break;
 			case 2:
 				//tallestPerson
 				std::cout << "Finding the tallest person..." << std::endl;
 				result = tallestPerson(people);
+				
 				break;
 			case 3:
 				//shortestPerson
 				std::cout << "Finding the shortest person..." << std::endl;
 				result = shortestPerson(people);
+				
 				break;
 			case 4:
 				//printByName
 				std::cout << "Sorting..." << std::endl;
 			       	selectionSort(people);
 				
-				for (int i = 0; i < 20; i++) {
-					people[i].print();
+				for (PersonType person : people) {
+					person.print();
 				}	
+				
 				break;
 			default:
 				break;
 		}
-		if (result != -1 && menuItem < 5 && menuItem > 0) 
+		if (result != -1 && result < 20 && menuItem < 4 && menuItem > 0) {
 			people[result].print();
+		} 
+		if (menuItem > 1 && menuItem < 5)
+			std::cin.ignore(65535, '\n');
+
 		std::cout << "Press enter to continue..." << std::endl;
 		std::getline(std::cin, target);
 		system("clear");
